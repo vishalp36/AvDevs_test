@@ -1,0 +1,75 @@
+@include font-face(Helvetica,
+'../fonts/Helvetica/helvetica-oblique',
+400,
+italic,
+woff2 woff);
+
+@include font-face(Helvetica,
+'../fonts/Helvetica/helvetica',
+400,
+normal,
+woff2 woff);
+
+@include font-face(Helvetica,
+'../fonts/Helvetica/helvetica-bold',
+700,
+normal,
+woff2 woff);
+
+@include font-face('Acumin Pro',
+'../fonts/AcuminPro/AcuminPro-Bold',
+700,
+normal,
+ttf woff);
+
+@include font-face('Acumin Pro',
+'../fonts/AcuminPro/AcuminPro-Regular',
+400,
+normal,
+ttf woff);
+
+@include font-face('icon',
+'../fonts/icons/icon',
+400,
+normal,
+ttf woff);
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-web:before {
+	content: "\e900";
+}
+
+.icon-send:before {
+	content: "\e901";
+}
+
+.icon-clock:before {
+	content: "\e94e";
+}
+
+.icon-facebook:before {
+	content: "\ea90";
+}
+
+.icon-instagram:before {
+	content: "\ea92";
+}
+
+.icon-twitter:before {
+	content: "\ea96";
+}

@@ -1,0 +1,23 @@
+// @import '~bootstrap/scss/bootstrap';
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'reboot';
+@import 'scaffolding';
+
+@import 'header';
+@import 'footer';
+@import 'home';
+// @import 'swiper/swiper-bundle.css';
+
+body {
+	background: $background-color;
+}
+
+h1 {
+	font-family: 'Helvetica', sans-serif;
+}
+
+figure {
+	margin: 0;
+}

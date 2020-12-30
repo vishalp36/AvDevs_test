@@ -1,0 +1,188 @@
+.main_footer {
+	// position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	padding: 58px 0;
+	// width: 1800px;
+	// height: 200px;
+	background-color: #a6adb4;
+
+	@include MQ(S) {
+		display: none;
+	}
+
+}
+
+.footer_row {
+	display: flex;
+	// justify-content: space-between;
+	align-items: flex-start;
+
+	.footer_col {
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@include MQ(M) {
+		flex-direction: column;
+
+		.footer_col {
+			width: 100%;
+			align-items: flex-start;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.footer_logo {
+	margin: 0;
+
+	a {
+		color: #ffffff;
+		font-family: "Acumin Pro";
+		font-size: fs(13px);
+		font-weight: 700;
+		line-height: 1;
+		margin-right: 62px;
+		text-transform: uppercase;
+		display: block;
+
+		@include hover {
+			text-decoration: none;
+			color: #000;
+		}
+	}
+}
+
+.footer_nav {
+	// width: 272px;
+	// width: 378px;
+	// margin-right: 228px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+
+	@include MQ(1024px) {
+		align-items: flex-start;
+	}
+
+	.footer_nav_list {
+		margin-left: 15px;
+		margin-right: 25px;
+
+		&:nth-child(2) {
+			margin-left: 40px;
+
+			@include MQ(M) {
+				margin-left: auto;
+			}
+		}
+	}
+
+	ul {
+		// display: flex;
+		// flex-direction: row;
+		// flex-wrap: wrap;
+		// width: 100%;
+
+		li {
+			width: 33.33%;
+
+			a {
+				color: #cbd0d3;
+				font-size: 13px;
+				// font-weight: 700;
+				line-height: 20px/13px*1;
+				display: block;
+			}
+		}
+	}
+}
+
+.footer_form {
+
+	// opacity: 0.1;
+	div {
+		width: 260px;
+		height: 40px;
+		border-radius: 6px;
+		border: 2px solid rgba(#fff, 0.1);
+		position: relative;
+		margin-bottom: 8px;
+	}
+
+	input {
+		border: 0;
+		background: none;
+		outline: none;
+		width: calc(100% - 50px);
+		padding: 0 0 0 20px;
+		height: 100%;
+		color: #fff;
+
+		@include placeholder {
+			color: #cbd0d3;
+		}
+	}
+
+	button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: none;
+		border: 0;
+		cursor: pointer;
+		outline: none;
+		width: 50px;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		color: #fff;
+
+		span {
+			display: none;
+		}
+	}
+
+	small {
+		color: #cbd0d3;
+		font-size: 11px;
+		font-weight: 400;
+		line-height: 1;
+	}
+}
+
+.footer_social {
+	// margin-left: 134px;
+	display: flex;
+
+	li {
+		display: flex;
+		margin-right: 16px;
+		justify-content: center;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	a {
+		color: #fff;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+
+		@include hover {
+			text-decoration: none;
+			color: #000;
+		}
+	}
+
+	span {
+		display: none;
+	}
+}
