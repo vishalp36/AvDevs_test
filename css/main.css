@@ -775,6 +775,10 @@ ol {
   display: none;
 }
 
+.primary_menu li.active_menu_item > a {
+  color: #000;
+}
+
 .primary_menu .has_menu {
   position: relative;
 }
