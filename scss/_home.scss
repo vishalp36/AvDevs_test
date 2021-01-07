@@ -1,3 +1,9 @@
+body {
+	overflow: hidden;
+	&.loaded {
+		overflow-y: auto;
+	}
+}
 #main {
 	position: relative;
 	z-index: 100;

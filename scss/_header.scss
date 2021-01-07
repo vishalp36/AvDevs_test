@@ -1,5 +1,5 @@
 .main_header {
-	background: #f6f8f9;
+	// background: #f6f8f9;
 	padding: 10px 20px;
 	display: flex;
 	justify-content: space-between;
@@ -9,10 +9,19 @@
 	left: 0;
 	width: 100%;
 	z-index: 101;
+	// transition: box-shadow 0.3s ease;
+	transition-property: background, box-shadow;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+
+	background: rgba(#f6f8f9, 1);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
 
 	// height: 30px;
 	&.fixed {
-		box-shadow: 0 5px 15px rgba(#000, 0.2);
+		background: rgba(#f6f8f9, 0.4);
+		box-shadow: 0 5px 15px rgba(#000, 0.1);
 	}
 }
 
@@ -74,7 +83,7 @@
 	@include MQ(S) {
 		position: fixed;
 		width: 287px;
-		height: 100%;
+		height: 100vh;
 		top: 0;
 		left: -287px;
 		z-index: 999;
@@ -150,7 +159,11 @@
 			display: none;
 		}
 	}
-
+	li.active_menu_item {
+		> a {
+			color: #000;
+		}
+	}
 	.has_menu {
 		position: relative;
 
@@ -179,6 +192,7 @@
 	width: 30px;
 	border-radius: 30px;
 	margin-left: 40px;
+	transition: box-shadow 0.3s ease;
 
 	@include hover {
 		box-shadow: 0 0 0 3px rgba(#a6adb4, 1);

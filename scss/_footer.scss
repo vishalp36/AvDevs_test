@@ -12,7 +12,6 @@
 	@include MQ(S) {
 		display: none;
 	}
-
 }
 
 .footer_row {
@@ -42,7 +41,7 @@
 
 	a {
 		color: #ffffff;
-		font-family: "Acumin Pro";
+		font-family: 'Acumin Pro';
 		font-size: fs(13px);
 		font-weight: 700;
 		line-height: 1;
@@ -95,7 +94,7 @@
 				color: #cbd0d3;
 				font-size: 13px;
 				// font-weight: 700;
-				line-height: 20px/13px*1;
+				line-height: 20px/13px * 1;
 				display: block;
 			}
 		}
@@ -103,7 +102,6 @@
 }
 
 .footer_form {
-
 	// opacity: 0.1;
 	div {
 		width: 260px;
